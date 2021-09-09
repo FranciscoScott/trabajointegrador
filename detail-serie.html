@@ -10,20 +10,23 @@
 <body>
     <!-- Header -->
 
-    <header>
-        <img class="logo" src="img/logo.png" alt="Logo de la pagina">
-
-        <form action="resultados.html" method="GET" target="_blank">
-            <input type="text" name="busqueda" placeholder="Ingrese se pelicula o serie favorita...">
-            <input type="submit" value="Buscar">
-        </form>
-        <nav class="navegacion">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="favorite.html">Favoritos</a></li>
-                <li><a href="genres.html">Generos</a></li>
+    <header class="contenedora">
+        <div class="cabecera">
+            <img class="logo" src="img/logo.png" alt="Logo de WeStream">
+            <h1 class="slogan">"We stream, you stream"</h1>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home </a></li>
+                <li><a href="favorites.html">Favoritos </a></li>
+                <li><a href="genres.html">Generos </a></li>
             </ul>
         </nav>
+        <form action="resultados.html" method="GET" target="_blank">
+            <input type="text" name="busqueda" placeholder="Busque su película o serie">
+            <input type="submit" value="Buscar">
+        </form>
+        
     </header>
 
 <section>
