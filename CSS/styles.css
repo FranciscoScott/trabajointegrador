@@ -8,12 +8,17 @@ body {
     margin: 0 auto;
 }
 .logo {
-    width: 40%;
+    width: 35%;
     border-radius: 180px;
 }
-.imagenlogo {
+.cabecera {
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: space-between
+}
+.slogan {
+    max-width: 50%;
+    font-family: 'Barlow Condensed', sans-serif;
 }
 .menu{
     list-style: none;
