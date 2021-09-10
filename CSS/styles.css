@@ -34,6 +34,7 @@ body {
 .menu li a {
     background-color: rgb(160, 160, 160);
     padding: 10px;
+    border-style: double;
 }
 .menu li {
     margin: 15px;
@@ -70,7 +71,7 @@ footer ul {
     justify-content: space-around;
     padding: 15px;
 }
-footer ul li {
+footer ul li a {
     border-style: double;
     padding: 6px;
 }
