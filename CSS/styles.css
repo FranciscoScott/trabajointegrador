@@ -30,6 +30,7 @@ body {
     display: flex;
     justify-content: space-around;
     padding-left: 0%;
+   
 }
 .menu li a {
     background-color: rgb(160, 160, 160);
@@ -60,6 +61,7 @@ h2 {
 }
 .fechas {
     font-family: 'Open Sans Condensed', sans-serif;
+    list-style: none;
 }
 a {
     text-decoration: none;
@@ -75,6 +77,16 @@ footer ul li a {
     border-style: double;
     padding: 6px;
 }
+
+/* CSS DETAIL-MOVIE.HTML */
+
+.imagenesmovie {
+    width: 200px;
+    height: 320px;
+    border-style: groove;
+    border-width: 8px;
+}
+
 
 /* CSS INDIVIDUAL DE GENRES.HTML */
 
