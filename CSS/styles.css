@@ -59,6 +59,9 @@ footer {
 h2 {
     font-family: 'Barlow Condensed', sans-serif;
 }
+h3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 .fechas {
     font-family: 'Open Sans Condensed', sans-serif;
     list-style: none;
@@ -80,13 +83,16 @@ footer ul li a {
 
 /* CSS DETAIL-MOVIE.HTML */
 
-.imagenesmovie {
-    width: 200px;
-    height: 320px;
-    border-style: groove;
-    border-width: 8px;
+.detallespeliculas {
+    font-family: 'Open Sans Condensed', sans-serif;
+    list-style: square;
+    max-width: 50%;
+    padding-left: 10%;
+}
+.detalles article {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-
-/* CSS INDIVIDUAL DE GENRES.HTML */
+/* CSS GENRES.HTML */
 
