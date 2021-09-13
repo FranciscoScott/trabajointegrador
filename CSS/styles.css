@@ -47,7 +47,7 @@ body {
     border-style: groove;
     border-width: 8px;
 }
-.contenedora section {
+.sectioncontenedora {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -96,3 +96,19 @@ footer ul li a {
 
 /* CSS GENRES.HTML */
 
+/* CSS DETAIL-GENRES.HTML */
+
+.imagenesgeneros {
+    width: 165px;
+    height: 265px;
+    border-style: groove;
+    border-width: 8px;
+}
+.peliculasgeneros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+.peliculasgeneros article {
+    padding-right: 1.7%;
+}
