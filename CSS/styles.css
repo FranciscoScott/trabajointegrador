@@ -30,10 +30,11 @@ body {
     display: flex;
     justify-content: space-around;
     padding-left: 0%;
+    font-family:'Barlow Condensed', sans-serif;;
    
 }
 .menu li a {
-    background-color: rgb(160, 160, 160);
+    background-color: rgb(84, 177, 177);
     padding: 10px;
     border-style: double;
 }
@@ -53,7 +54,7 @@ body {
     justify-content: space-between;
 }
 footer {
-    background-color: cadetblue;
+    background-color: rgb(84, 177, 177);
     border-radius: 100px;
 }
 h2 {
@@ -75,6 +76,7 @@ footer ul {
     display: flex;
     justify-content: space-around;
     padding: 15px;
+    font-family: 'Barlow Condensed', sans-serif;;
 }
 footer ul li a {
     border-style: double;
@@ -96,6 +98,12 @@ footer ul li a {
 
 /* CSS GENRES.HTML */
 
+.generos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 /* CSS DETAIL-GENRES.HTML */
 
 .imagenesgeneros {
@@ -110,5 +118,23 @@ footer ul li a {
     justify-content: left;
 }
 .peliculasgeneros article {
-    padding-right: 1.7%;
+    padding-right: 14px;
+}
+.titulodetailgenres {
+    width: 100%;
+    font-size: 35px;
+    border-style: solid;
+    display: flex;
+    justify-content: space-around;
+    border-color: darkcyan;
+}
+.titulosgeneros {
+    width: 100%;
+    font-size: 30px;
+    text-decoration: underline;
+    text-decoration-color: darkcyan;
+
+}
+.peliculasgeneros h3 {
+    font-size: 15px;
 }
