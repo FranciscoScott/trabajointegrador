@@ -1,7 +1,5 @@
 body {
-    background-image: url(../img/background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+   background-color: rgb(121, 114, 141);
 }
 .contenedora {
     max-width: 780px;
