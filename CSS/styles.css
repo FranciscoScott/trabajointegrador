@@ -1,5 +1,5 @@
 body {
-   background-color: rgba(80, 56, 9, 0.582);
+   background-color: rgb(90, 158, 160);
 }
 .contenedora {
     max-width: 780px;
@@ -32,7 +32,7 @@ body {
    
 }
 .menu li a {
-    background-color: rgb(84, 177, 177);
+    background-color: rgb(166, 212, 212);
     padding: 10px;
     border-style: double;
 }
@@ -52,7 +52,7 @@ body {
     justify-content: space-between;
 }
 footer {
-    background-color: rgb(84, 177, 177);
+    background-color: rgb(166, 212, 212);
     border-radius: 100px;
 }
 h2 {
@@ -99,12 +99,19 @@ footer ul li a {
 .generos {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content:space-around;
+}
+.generos article {
+    border-style:groove;
+    border-color: rgb(166, 212, 212);
+    border-radius: 20px;
+    margin: 20px;
+    background-color: lightskyblue;
 }
 
 .generoimg {
     width: 100px;
-    height: 100px;
+    height: 100px
 }
 
 /* CSS DETAIL-GENRES.HTML */
@@ -129,13 +136,13 @@ footer ul li a {
     border-style: solid;
     display: flex;
     justify-content: space-around;
-    border-color: darkcyan;
+    border-color: rgb(166, 212, 212);
 }
 .titulosgeneros {
     width: 100%;
     font-size: 30px;
     text-decoration: underline;
-    text-decoration-color: darkcyan;
+    text-decoration-color: rgb(166, 212, 212);
 
 }
 .peliculasgeneros h3 {
