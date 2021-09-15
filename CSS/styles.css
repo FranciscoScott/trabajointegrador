@@ -24,6 +24,12 @@ body {
 .titulos {
     width: 100%;
 }
+.titulos2 {
+    width: 100%;
+    background-color: lightskyblue;
+    display: flex;
+    justify-content: center;
+}
 .menu {
     display: flex;
     justify-content: space-around;
@@ -39,6 +45,12 @@ body {
 .menu li {
     margin: 15px;
     list-style: none;
+}
+.banner {
+    width: 760px; height: 270px;
+    border-style: groove;
+    border-width: 10px;
+    border-color: darkgrey;
 }
 .imageneshome {
     width: 200px;
