@@ -138,3 +138,13 @@ footer ul li a {
 .peliculasgeneros h3 {
     font-size: 15px;
 }
+
+.titulofav {
+text-align: center;
+}
+
+/* Desktop */
+
+@media (min-width:1024px){
+    
+}
