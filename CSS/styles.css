@@ -104,6 +104,11 @@ footer ul li a {
     justify-content: space-between;
 }
 
+.generoimg {
+    width: 100px;
+    height: 100px;
+}
+
 /* CSS DETAIL-GENRES.HTML */
 
 .imagenesgeneros {
