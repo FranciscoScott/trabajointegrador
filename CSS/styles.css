@@ -146,6 +146,14 @@ footer ul li a {
 
 .titulofav {
 text-align: center;
+
+}
+
+/* Buscador*/
+
+.buscador {
+text-align: center;
+margin-top: 20px;
 }
 
 /* Desktop */
