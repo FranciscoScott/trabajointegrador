@@ -38,7 +38,7 @@ body {
    
 }
 .menu li a {
-    background-color: rgb(166, 212, 212);
+    background-color: rgb(16, 129, 129);
     padding: 10px;
     border-style: double;
 }
@@ -63,8 +63,14 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
 }
+.sectioncontenedora article {
+    background-color:rgb(166, 212, 212);
+    padding: 10px;
+    margin-bottom: 18px;
+    margin-top: 18px;
+}
 footer {
-    background-color: rgb(166, 212, 212);
+    background-color: rgb(16, 129, 129);
     border-radius: 100px;
 }
 h2 {
@@ -129,8 +135,8 @@ footer ul li a {
 /* CSS DETAIL-GENRES.HTML */
 
 .imagenesgeneros {
-    width: 165px;
-    height: 265px;
+    width: 150px;
+    height: 240px;
     border-style: groove;
     border-width: 8px;
 }
@@ -138,6 +144,10 @@ footer ul li a {
     display: flex;
     flex-wrap: wrap;
     justify-content: left;
+    background-color:rgb(166, 212, 212) ;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 30px
 }
 .peliculasgeneros article {
     padding-right: 14px;
@@ -153,9 +163,10 @@ footer ul li a {
 .titulosgeneros {
     width: 100%;
     font-size: 30px;
+    display: flex;
+    justify-content: center;
     text-decoration: underline;
-    text-decoration-color: rgb(166, 212, 212);
-
+    text-decoration-style: double;
 }
 .peliculasgeneros h3 {
     font-size: 15px;
