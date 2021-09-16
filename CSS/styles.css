@@ -54,7 +54,7 @@ body {
 }
 .imageneshome {
     width: 200px;
-    height: 320px;
+    height: 300px;
     border-style: groove;
     border-width: 8px;
 }
@@ -98,6 +98,13 @@ footer ul li a {
     border-style: double;
     padding: 6px;
 }
+footer nav h3 {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-decoration: underline;
+}
 
 /* CSS DETAIL-MOVIE.HTML */
 
@@ -136,7 +143,7 @@ footer ul li a {
 
 .imagenesgeneros {
     width: 150px;
-    height: 240px;
+    height: 260px;
     border-style: groove;
     border-width: 8px;
 }
