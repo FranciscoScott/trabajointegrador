@@ -51,6 +51,8 @@ body {
     border-style: groove;
     border-width: 10px;
     border-color: darkgrey;
+    max-width: 95%;
+    margin-left:0.5% ;
 }
 .imageneshome {
     width: 200px;
@@ -193,6 +195,25 @@ margin-top: 20px;
 
 /* Desktop */
 
-@media (min-width:1024px){
-    
+@media (min-width:1024px) {
+
+
+.contenedora {
+max-width: 95%;
+
+}
+
+.banner{
+    max-width: 100%;
+    align-items: center;
+    margin-left: 8%;
+}
+
+
+
+
+
+
+
+
 }
