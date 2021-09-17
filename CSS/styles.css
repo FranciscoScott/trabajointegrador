@@ -160,7 +160,7 @@ footer nav h3 {
 
 .imagenesgeneros {
     width: 100%;
-    height: 260px;
+    height: 230px;
     border-style: groove;
     border-width: 8px;
 }
@@ -181,8 +181,7 @@ footer nav h3 {
     width: 100%;
     font-size: 35px;
     border-style: solid;
-    display: flex;
-    justify-content: space-around;
+    text-align: center;
     border-color: rgb(166, 212, 212);
 }
 .titulosgeneros {
@@ -300,5 +299,21 @@ margin-top: 20px;
         margin: 5px;
     }
 
-    /*DETAIL MOVIES*/
+    /*DETAIL MOVIES/SERIES*/
+    
+    .imagenesdetail {
+        border-style: groove;
+        height: 260px;
+    }
+
+    /*DETAIL GENRES*/
+
+    .peliculasgeneros article {
+        width: 50%;
+    }
+
+
+
+
+
 }
