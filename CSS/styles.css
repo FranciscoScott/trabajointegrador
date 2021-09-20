@@ -93,6 +93,7 @@ h3 {
 }
 .agregarafavs {
     display: inline-block;
+    margin-top: 5%;
 }
 a {
     text-decoration: none;
