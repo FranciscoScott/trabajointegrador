@@ -1,4 +1,3 @@
-window.onload = function() {
 
 const apiKey = "7d087a83872914dbc8f7333f0f93e454" ;
 
@@ -9,7 +8,6 @@ const apiKey = "7d087a83872914dbc8f7333f0f93e454" ;
 //Peliculas Populares en We Stream
 
 let url = (`https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}`)
-
 let peliculasPopulares = document.querySelector(".sectioncontenedora")
 
 fetch (url)
@@ -17,29 +15,83 @@ fetch (url)
 .then (function(respuesta){
     return respuesta.json();
 })
-.then(function(informacion){ 
+.then(function(datos){ 
     for (let i = 0; i <= 5; i++){ 
-    console.log(informacion.results[i]);
+    console.log(datos.results[i]);
     
     //estructura de nuestra pagina a partir de innerHTML
 
         peliculasPopulares.innerHTML += `
-        <article>
-    <a href= "./javascript/detail-movie.js?id=${datos.results[i].id}" class= "titulos2"> ${datos.results[i].title} </a>
-
-    <div> <a href="./detail-movie.html?id=${datos.results[i].id}"> <img src="https://image.tmdb.org/t/p/w342/${datos.results[i].poster_path}" alt="${datos.results[i].title}" class="imagenesdetail"> </a> </div>
-
-    <p>Fecha de Estreno: ${datos.results[i].release_date}</p>
-    </article>  
+        <article class="articlecontenedor">
+            <div>
+                    <img class="imageneshome" src="https://image.tmdb.org/t/p/w342/${datos.results[i].poster_path}"  alt="${datos.results[i].title} "> 
+            </div>
+            <h3 class="titulofav">${datos.results[i].title}</h3>
+            <p class="fechas">${datos.results[i].release_date}</p>
+           
+            <a class="fechas" href="detail-movie.html?id=${datos.results[i].id}"> Más información </a> 
+        <article/>
         `
 }
-})
-.catch(function (error) {
-    console.log('el error fue ' + error);
 })
 
 //Series Populares en We Stream
 
+let url2 = (`https://api.themoviedb.org/3/tv/popular?api_key=${apiKey}`)
+let seriesPopulares = document.querySelector(".sectioncontenedora2")
+
+fetch (url2)
+
+.then(function (respuesta) {
+    return respuesta.json()
+})
+
+.then(function (datos) {
+    for (let i = 0; i <= 5; i++) {
+        console.log(datos.results[i]);
+
+    //estructura de nuestra pagina a partir de innerHTML
+    seriesPopulares.innerHTML += `
+    <article class="articlecontenedor">
+        <div>
+                <img class="imageneshome" src="https://image.tmdb.org/t/p/w342/${datos.results[i].poster_path}"  alt="${datos.results[i].name} "> 
+        </div>
+        <h3 class="titulofav">${datos.results[i].name}</h3>
+        <p class="fechas">${datos.results[i].first_air_date}</p>
+       
+        <a class="fechas" href="detail-movie.html?id=${datos.results[i].id}"> Más información </a> 
+    <article/>
+    `
+}
+})
 //Lo más visto en Peliculas de WeStream
 
+let url3 = (`https://api.themoviedb.org/3/movie/top_rated?api_key=${apiKey}`)
+let masVisto = document.querySelector(".sectioncontenedora3")
+
+fetch (url3)
+
+.then(function (respuesta) {
+    return respuesta.json()
+})
+
+.then(function (datos) {
+    for (let i = 0; i <= 5; i++) {
+        console.log(datos.results[i]);
+
+ //estructura de nuestra pagina a partir de innerHTML
+
+ masVisto.innerHTML += `
+ <article class="articlecontenedor">
+     <div>
+             <img class="imageneshome" src="https://image.tmdb.org/t/p/w342/${datos.results[i].poster_path}"  alt="${datos.results[i].title} "> 
+     </div>
+     <h3 class="titulofav">${datos.results[i].title}</h3>
+     <p class="fechas">${datos.results[i].release_date}</p>
+    
+     <a class="fechas" href="detail-movie.html?id=${datos.results[i].id}"> Más información </a> 
+ <article/>
+ `
 }
+})
+ 

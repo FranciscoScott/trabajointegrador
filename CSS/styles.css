@@ -1,3 +1,4 @@
+
 * {
     box-sizing: border-box;
 }
@@ -60,7 +61,6 @@ body {
 }
 .imageneshome {
     width: 100%;
-    height: 300px;
     border-style: groove;
     border-width: 8px;
 }
@@ -69,12 +69,22 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.sectioncontenedora article {
+.sectioncontenedora2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.sectioncontenedora3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.articlecontenedor {
     background-color:rgb(166, 212, 212);
     padding: 20px;
     margin-bottom: 18px;
     margin-top: 18px;
-    width: 33%;
+    width: 30%;
 }
 footer {
     background-color: rgb(16, 129, 129);
