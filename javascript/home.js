@@ -59,7 +59,7 @@ fetch (url2)
         <h3 class="titulofav">${datos.results[i].name}</h3>
         <p class="fechas">${datos.results[i].first_air_date}</p>
        
-        <a class="fechas" href="detail-movie.html?id=${datos.results[i].id}"> Más información </a> 
+        <a class="fechas" href="detail-serie.html?id=${datos.results[i].id}"> Más información </a> 
     <article/>
     `
 }
