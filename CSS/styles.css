@@ -186,7 +186,7 @@ footer nav h3 {
     border-style: groove;
     border-width: 8px;
 }
-.peliculasgeneros {
+.peliculasgeneros, .seriesgeneros {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -195,6 +195,10 @@ footer nav h3 {
     margin-top: 20px;
     margin-bottom: 30px;
     padding: 30px
+}
+.seriesgeneros article {
+    width: 25%;
+    padding: 2%;
 }
 .peliculasgeneros article {
     width: 25%;
