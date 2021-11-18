@@ -6,15 +6,16 @@ fetch ('https://api.themoviedb.org/3/genre/movie/list?api_key=7d087a83872914dbc8
 })
 //segundo .then 
 .then (function (data){
-    for (let i = 0; i < 19; i++) {
+    for (let i = 0; i < data.genres.length; i++) {
     console.log(data.genres[i]);
 
     document.querySelector(".generos").innerHTML +=
     `
     <article>
-        <a href="detail-genres.html">
+        <a href="detail-genres-peliculas.html?id=${data.genres[i].id}">
         <div>
         <h3 class="titulos2">${data.genres[i].name}</h3>
+        </div>
         </a>
     </article>
     `
@@ -29,15 +30,16 @@ fetch ('https://api.themoviedb.org/3/genre/tv/list?api_key=7d087a83872914dbc8f73
 })
 //segundo .then 
 .then (function (data){
-    for (let i = 0; i < 16; i++) {
+    for (let i = 0; i < data.genres.length; i++) {
     console.log(data.genres[i]);
 
     document.querySelector(".generosseries").innerHTML +=
     `
     <article>
-        <a href="detail-genres.html">
+        <a href="detail-genres-series.html?id=${data.genres[i].id}">
         <div>
         <h3 class="titulos2">${data.genres[i].name}</h3>
+        </div>
         </a>
     </article>
     `

@@ -190,6 +190,7 @@ footer nav h3 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: flex-start;
     background-color:rgb(166, 212, 212) ;
     margin-top: 20px;
     margin-bottom: 30px;

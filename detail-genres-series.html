@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peliculas por generos</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+</head>
+</head>
+<body>
+     <!-- Header -->
+
+     <header class="contenedora">
+        <div class="cabecera">
+            <img class="logo" src="img/logo.png" alt="Logo de WeStream">
+            <h2 class="slogan">"We stream, you stream"</h2>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home </a></li>
+                <li><a href="favorite.html">Favoritos </a></li>
+                <li><a href="genres.html">Generos </a></li>
+            </ul>
+        </nav>
+        <div class="buscador">
+            <form action="resultados.html" method="GET">
+                <input type="text" name="busqueda" placeholder="Busque su película o serie">
+                <input type="submit" value="Buscar">
+            </form>
+            </div>
+
+    </header>
+
+
+    <!-- Lista de generos de películas -->
+<main class="contenedora">
+<h2 id="accion" class="titulosgeneros">Acción</h2>
+    <section class="peliculasgeneros">
+        <article>
+            <h3><a href="detail-movie.html#batman">Batmán</a></h3>
+            <div><img class="imagenesgeneros" src="img/Batman.jpg" alt="Imagen de Batman, el caballero de la noche"></div>
+            <div class="agregarafavsgenres"><a href="favorite.html"><i class="far fa-star"></i></a></div>
+        </article>
+        <article>
+            <h3><a href="detail-movie.html#batman">Django</a></h3>
+                <div ><img  class="imagenesgeneros" src="img/django.jpg" alt="Imagen de Django"></div>
+                <div class="agregarafavsgenres"><a href="favorite.html"><i class="far fa-star"></i></a></div>
+        </article>
+        <article>
+            <h3><a href="detail-movie.html#batman">Iron Man</a></h3>
+            <div><img class="imagenesgeneros" src="img/ironman.jpg" alt="Imagen de Iron Man"></div>
+            <div class="agregarafavsgenres"><a href="favorite.html"><i class="far fa-star"></i></a></div>
+        </article>
+        <article>
+            <h3><a href="detail-movie.html#batman">Spiderman</a></h3>
+            <img class="imagenesgeneros" src="img/spider.jpg" alt="Imagn de Spiderman">
+            <div class="agregarafavsgenres"><a href="favorite.html"><i class="far fa-star"></i></a></div>
+        </article>
+    </section>
+</main>
+
+
+    <!-- Footer -->
+
+    <footer class="contenedora">
+
+        <nav>
+            <h3>Contactanos!</h3>
+            <ul>
+                <li><a href="https://beacons.ai/franciscoscott">Francisco Scott</a></li>
+                <li><a href="https://beacons.ai/luca_garegnani">Luca Garegnani</a></li>
+                <li><a href="https://beacons.ai/facubory">Facundo Bory</a></li>
+            </ul>
+        </nav>
+    </footer>
+    <script src="javascript/detail-genres-peliculas.js"></script>
+</body>
+</html>
