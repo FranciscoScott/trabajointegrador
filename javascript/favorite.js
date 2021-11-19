@@ -1,29 +1,53 @@
-let api = `https://api.themoviedb.org/3/movie/`;
-let api_key = `7d087a83872914dbc8f7333f0f93e454`;
+const apiKey = "7d087a83872914dbc8f7333f0f93e454" ;
 
-let tracks = window.localStorage.getItem("tracks")
+let favoritos = localStorage.getItem('pelisFavoritas');
 
-if (tracks) {
-    tracks = tracks.split(',');
-} else {
-    tracks = [];
+/*
+ * { peliculas: [1, 2, 3] }
+ */
+favoritos = JSON.parse(favoritos) // conviertede texto a objeto; .stringify es la inversa
+
+let peliculasPopulares = document.getElementById("favoritesContent")
+let favsHTML = '';
+
+function removeFromFav(id) {
+  let favoritos = localStorage.getItem('pelisFavoritas');
+  favoritos = JSON.parse(favoritos) // conviertede texto a objeto; .stringify es la inversa
+
+  favoritos.peliculas = favoritos.peliculas.filter(e => e != id);
+  let cardPelicula = document.getElementById(`card-movie-${id}`);
+  cardPelicula.parentNode.removeChild(cardPelicula); 
+
+  let favoritosString = JSON.stringify(favoritos);
+  localStorage.setItem('pelisFavoritas', favoritosString);
 }
 
-for (i = 0; i < tracks.length; i++) {
-    let url = `https://api.themoviedb.org/3/movie/${tracks[i]}`;
-
-    fetch(url)
-        .then(function (response) {
-            return response.json();
-        })
-        .then(function (datos) {
-
-            let playlists = document.getElementById("favs");
-
-            playlists.innerHTML += ` `;
-
-        })
-        .catch(function (error) {
-            console.log("el error es:" + error)
-        });
+// [1, 56, 12].length = 3
+function cargarFav(peliculas) {
+  if (peliculas.length == 0) {
+    peliculasPopulares.innerHTML += favsHTML; 
+    return;
+  }
+  let url = (`https://api.themoviedb.org/3/movie/${peliculas[0]}?api_key=${apiKey}`)
+  fetch(url)
+    .then( function(respuesta) {
+      return respuesta.json();
+    })
+    .then( function(respuesta) {
+    favsHTML = `${favsHTML}
+        <article class="articlecontenedor" id="card-movie-${peliculas[0]}">
+            <div>
+              <img class="imageneshome"
+                src="https://image.tmdb.org/t/p/w342/${respuesta.backdrop_path}"  alt="${respuesta.title} "> 
+            </div>
+            <h3 class="titulofav">${respuesta.title}</h3>
+            <p class="fechas">${respuesta.release_date}</p>
+            <a class="fechas" href="detail-movie.html?id=${peliculas[0]}"> Más información </a> 
+            <button onClick="removeFromFav(${peliculas[0]})"> - </button>
+        </article>
+        `;
+      cargarFav(peliculas.splice(1));
+  });
 }
+
+cargarFav(favoritos.peliculas);

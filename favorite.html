@@ -1,49 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Favoritos</title>
     <link rel="stylesheet" href="CSS/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Open+Sans+Condensed:wght@300&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
 </head>
 </head>
-
 <body>
-    <!-- Header -->
+        <!-- Header -->
 
-    <header class="contenedora">
-        <div class="cabecera">
-            <img class="logo" src="img/logo.png" alt="Logo de WeStream">
-            <h2 class="slogan">"We stream, you stream"</h2>
-        </div>
-        <nav>
-            <ul class="menu">
-                <li><a href="index.html">Home </a></li>
-                <li><a href="favorite.html">Favoritos </a></li>
-                <li><a href="genres.html">Generos </a></li>
-            </ul>
-        </nav>
-        <div class="buscador">
-            <form action="resultados.html" method="GET">
-                <input type="text" name="busqueda" placeholder="Busque su película o serie">
-                <input type="submit" value="Buscar">
-            </form>
-        </div>
-
-    </header>
-    <!-- Main -->
+        <header class="contenedora">
+            <div class="cabecera">
+                <img class="logo" src="img/logo.png" alt="Logo de WeStream">
+                <h2 class="slogan">"We stream, you stream"</h2>
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html">Home </a></li>
+                    <li><a href="favorite.html">Favoritos </a></li>
+                    <li><a href="genres.html">Generos </a></li>
+                </ul>
+            </nav>
+            <div class="buscador">
+                <form action="resultados.html" method="GET">
+                    <input type="text" name="busqueda" placeholder="Busque su película o serie">
+                    <input type="submit" value="Buscar">
+                </form>
+                </div>
+            
+        </header>
+            <!-- Main -->
     <main class="contenedora">
-        <h1 class="titulodetailgenres">Mi lista de peliculas favoritas</h1>
-        <div id="favs"></div>
-        <!--<section class="sectioncontenedora">
+        <section id="favoritesContent" class="sectioncontenedora">
+        </section>
+        <!--
+        <h1 class="titulodetailgenres">Mi lista de favoritos</h1>
+        <section class="sectioncontenedora">
         <article class="articlecontenedor">
             <h3 class="titulofav"><a href="detail-movie.html#batman">Batmán</a></h3>
             <div><img class="imageneshome" src="img/Batman.jpg" alt="Imagen de Batman, el caballero de la noche"></div>
@@ -58,11 +56,11 @@
             <h3 class="titulofav"><a href="detail-movie.html#batman">Cruella</a></h3>
             <div><img class="imageneshome" src="img/cruella.jpg" alt="Imagen de Cruella"></div>
         </article>
-      </section>-->
-        <h1 class="titulodetailgenres">Mi lista de series favoritas</h1>
+      </section>
+        -->
     </main>
-
-    <!-- Footer -->
+    
+        <!-- Footer -->
 
     <footer class="contenedora">
 
@@ -75,6 +73,6 @@
             </ul>
         </nav>
     </footer>
+    <script src="javascript/favorite.js"></script>
 </body>
-
 </html>
