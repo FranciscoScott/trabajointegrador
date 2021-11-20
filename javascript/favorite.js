@@ -38,7 +38,7 @@ function cargarFav(peliculas) {
         <article class="articlecontenedor" id="card-movie-${peliculas[0]}">
             <div>
               <img class="imageneshome"
-                src="https://image.tmdb.org/t/p/w342/${respuesta.backdrop_path}"  alt="${respuesta.title} "> 
+                src="https://image.tmdb.org/t/p/w342/${respuesta.poster_path}"  alt="${respuesta.title} "> 
             </div>
             <h3 class="titulofav">${respuesta.title}</h3>
             <p class="fechas">${respuesta.release_date}</p>
