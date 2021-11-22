@@ -14,6 +14,7 @@ function addMovieToFav(id) {
   
     let favoritosString = JSON.stringify(favoritos);
     localStorage.setItem('pelisFavoritas', favoritosString);
+    alert("Se ha agregado la pelicula a tu lista de favoritos")
   }
   
 fetch('https://api.themoviedb.org/3/movie/' + id + '?api_key=7d087a83872914dbc8f7333f0f93e454')
