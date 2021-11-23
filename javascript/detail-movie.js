@@ -41,6 +41,5 @@ fetch('https://api.themoviedb.org/3/movie/' + id + '?api_key=7d087a83872914dbc8f
        
     </article>
 
-
     `
     })
