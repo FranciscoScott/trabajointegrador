@@ -6,10 +6,8 @@ const apiKey = "7d087a83872914dbc8f7333f0f93e454";
 
 //Peliculas Populares en We Stream
 
-let url = (`https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}`)
-let peliculasPopulares = document.querySelector(".sectioncontenedora")
 
-fetch(url)
+fetch(`https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}`)
 
     .then(function (respuesta) {
         return respuesta.json();
@@ -18,8 +16,7 @@ fetch(url)
         for (let i = 0; i <= 5; i++) {
             console.log(datos.results[i]);
 
-            //estructura de nuestra pagina a partir de innerHTML
-
+let peliculasPopulares =  document.querySelector(".sectioncontenedora")
             peliculasPopulares.innerHTML += `
         <article class="articlecontenedor">
             <div>

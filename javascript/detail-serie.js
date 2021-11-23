@@ -34,7 +34,7 @@ fetch(`https://api.themoviedb.org/3/tv/${id2}?api_key=7d087a83872914dbc8f7333f0f
         <img class="imagenesdetail" src="https://image.tmdb.org/t/p/w342/${datos.poster_path}" alt="${datos.name}">
         <ul class="detallespeliculas">
             <li>Fecha de estreno:${datos.first_air_date}</li>
-            <li>Género: </li>
+            <li>Género:<a href="detail-genres-series.html?id=${datos.genres[0].id}"> ${datos.genres[0].name}</a></li>
             <li>Duración: ${datos.number_of_episodes}</li>
             <li>Calificación: ${datos.vote_average}</li>
             <li>Sinópsis: ${datos.overview}</li>

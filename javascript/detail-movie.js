@@ -32,7 +32,7 @@ fetch('https://api.themoviedb.org/3/movie/' + id + '?api_key=7d087a83872914dbc8f
         <img class="imagenesdetail" src="https://image.tmdb.org/t/p/w342/${datos.poster_path}" alt="${datos.title}">
         <ul class="detallespeliculas">
             <li>Fecha de estreno: ${datos.release_date}</li>
-            <li>Género: ${datos.genres}</li>
+            <li>Género: <a href="detail-genres-peliculas.html?id=${datos.genres[0].id}"> ${datos.genres[0].name}</a></li>
             <li>Duración: ${datos.runtime}</li>
             <li>Calificación: ${datos.vote_average}</li>
             <li>Sinópsis: ${datos.overview} </li>
