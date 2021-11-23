@@ -90,6 +90,11 @@ footer {
     background-color: rgb(16, 129, 129);
     border-radius: 100px;
 }
+.tmdb {
+    width: 100%;
+    border-radius: 50px;
+    padding: 15px;
+}
 h2 {
     font-family: 'Barlow Condensed', sans-serif;
 }
@@ -282,14 +287,25 @@ margin-top: 20px;
         font-size: 20px;
     }
     .sectioncontenedora article {
-        background-color: unset;
         width: 30%;
         margin-bottom: 1px;
         margin-top: 1px;
         padding: 5px;
     }
-    .sectioncontenedora {
-        justify-content: center;
+    .sectioncontenedora2 article {
+        width: 30%;
+        margin-bottom: 5px;
+        margin-top: 5px;
+        padding: 5px;
+    }
+    .sectioncontenedora3 article {
+        width: 30%;
+        margin-bottom: 5px;
+        margin-top: 5px;
+        padding: 5px;
+    }
+    .sectioncontenedora, .sectioncontenedora2, .sectioncontenedora3 {
+        justify-content: space-evenly;
     }
     .imageneshome {
         width: 100%;
@@ -318,12 +334,23 @@ margin-top: 20px;
         width: 100%;
     }
     .generos article {
-        border-radius: 10px;
+        border-style:groove;
+        border-color: rgb(166, 212, 212);
+        border-radius: 0px;
         margin: 5px;
-        width: 20%;
+        width: 30%;
+        background-color: lightskyblue;
     }
     .generoimg {
         height: 70%;
+    }
+    .generosseries article {
+        border-style:groove;
+        border-color: rgb(166, 212, 212);
+        border-radius: 0px;
+        margin: 5px;
+        width: 30%;
+        background-color: lightskyblue;
     }
 
     /*DETAIL MOVIES/SERIES*/
