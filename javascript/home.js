@@ -16,7 +16,7 @@ fetch(`https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}`)
         for (let i = 0; i <= 5; i++) {
             console.log(datos.results[i]);
 
-let peliculasPopulares =  document.querySelector(".sectioncontenedora")
+            let peliculasPopulares = document.querySelector(".sectioncontenedora")
             peliculasPopulares.innerHTML += `
         <article class="articlecontenedor">
             <div>
@@ -89,4 +89,24 @@ fetch(url3)
  <article/>
  `
         }
+
+        document.getElementById("buscador").addEventListener("submit", function (e) {
+            e.preventDefault();
+            let textoBuscado = document.getElementById("busqueda-text").value;
+            let tieneErrores = false;
+
+            if (textoBuscado == "") {
+                alert("Debes escribir algo!");
+                tieneErrores = true;
+            } else if (textoBuscado.length <= 3) {
+                tieneErrores = true;
+                alert("Debes escribir al menos tres caracteres!");
+            }
+
+            if (!tieneErrores) {
+                this.submit();
+            }
+
+        });
     })
+

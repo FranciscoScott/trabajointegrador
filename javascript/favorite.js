@@ -94,7 +94,29 @@ function cargarFavSeries(series) {
         `;
       cargarFavSeries(series.splice(1));
   });
+  
 }
 
 cargarFav(favoritos.peliculas);
 cargarFavSeries(favoritos.series);
+
+document.getElementById("buscador").addEventListener("submit", function (e) {
+  e.preventDefault();
+  let textoBuscado = document.getElementById("busqueda-text").value;
+  let tieneErrores = false;
+
+  if (textoBuscado == "") {
+      alert("Debes escribir algo!");
+      tieneErrores = true;
+  } else if (textoBuscado.length <= 3) {
+      tieneErrores = true;
+      alert("Debes escribir al menos tres caracteres!");
+  }
+
+  if (!tieneErrores) {
+      this.submit();
+  }
+
+});
+
+

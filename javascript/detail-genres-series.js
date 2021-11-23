@@ -33,3 +33,21 @@ fetch('https://api.themoviedb.org/3/genre/tv/list?api_key=7d087a83872914dbc8f733
                 }
             })
     })
+    document.getElementById("buscador").addEventListener("submit", function (e) {
+        e.preventDefault();
+        let textoBuscado = document.getElementById("busqueda-text").value;
+        let tieneErrores = false;
+
+        if (textoBuscado == "") {
+            alert("Debes escribir algo!");
+            tieneErrores = true;
+        } else if (textoBuscado.length <= 3) {
+            tieneErrores = true;
+            alert("Debes escribir al menos tres caracteres!");
+        }
+
+        if (!tieneErrores) {
+            this.submit();
+        }
+
+    });
